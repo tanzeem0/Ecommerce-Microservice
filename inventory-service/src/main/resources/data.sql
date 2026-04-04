@@ -1,0 +1,10 @@
+INSERT INTO product (title, price, stock) VALUES ('Apple iPhone 15', 999.99, 50);
+INSERT INTO product (title, price, stock) VALUES ('Samsung Galaxy S24', 899.99, 75);
+INSERT INTO product (title, price, stock) VALUES ('Sony WH-1000XM5 Headphones', 349.99, 120);
+INSERT INTO product (title, price, stock) VALUES ('Dell XPS 15 Laptop', 1799.99, 30);
+INSERT INTO product (title, price, stock) VALUES ('Apple MacBook Pro 14', 1999.99, 25);
+INSERT INTO product (title, price, stock) VALUES ('Logitech MX Master 3 Mouse', 99.99, 200);
+INSERT INTO product (title, price, stock) VALUES ('Samsung 65 inch OLED TV', 2499.99, 15);
+INSERT INTO product (title, price, stock) VALUES ('Nike Air Max 270', 149.99, 300);
+INSERT INTO product (title, price, stock) VALUES ('Levi 501 Original Jeans', 59.99, 500);
+INSERT INTO product (title, price, stock) VALUES ('Instant Pot Duo 7-in-1', 89.99, 180);
