@@ -6,6 +6,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,13 +17,16 @@ import java.util.List;
 @RequestMapping("/core")
 @Slf4j
 @RequiredArgsConstructor
+@RefreshScope
 public class OrdersController {
 
     private final OrdersService ordersService;
+    @Value("${my.variable}")
+    private  String myVariable;
 
     @GetMapping("/helloOrders")
     public String helloOrder(@RequestHeader("X-User-Id") Long userId){
-        return "Hello from Order Service with user: " + userId;
+        return "Hello from Order Service with user: " + userId + " myvariable: " + myVariable;
     }
 
     @PostMapping("/create-order")
